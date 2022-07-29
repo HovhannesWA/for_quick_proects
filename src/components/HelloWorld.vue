@@ -1,11 +1,30 @@
 <template>
   <div>
-    <div v-for="post in posts" :key="post.id" class="post">
+    <div>      
+      <!-- <i18n
+        path="a_accept_the_terms_and_conditions"
+        tag="p"
+      >
+        <template #termsUrl>
+          <button @click="testLink">
+            {{ $t('terms') }}
+          </button>
+        </template>
+      </i18n> -->
+    </div>
+    <hr>
+    <div
+      v-for="post in posts"
+      :key="post.id"
+      class="post"
+    >
       <span> {{ post.id }} </span>
       <span> {{ post.message }} </span>
     </div>
-    <hr />
-    <button @click="addNewPost">Add</button>
+    <hr>
+    <button @click="addNewPost">
+      Add
+    </button>
   </div>
 </template>
 
@@ -16,6 +35,10 @@ export default {
   name: "HelloWorld",
   props: {
     msg: String,
+    name: String,
+    last_name: String,
+    age: Number,
+    test_obj: Object
   },
   data() {
     return {
@@ -32,20 +55,25 @@ export default {
     },
   },
 
+  created() {
+    axios.get("https://jsonplaceholder.typicode.com/todos?_limit=5");
+    console.log(this.$props);
+  },
+
+  updated() {
+    console.log("updated");
+  },
+
   methods: {
     addNewPost() {
       let id = this.lastId + 1;
       let posts = [...this.posts, { id, message: `post-${id}` }];
       this.$store.dispatch("auth/setPosts", { posts });
     },
-  },
 
-  created() {
-    axios.get("https://jsonplaceholder.typicode.com/todos?_limit=5");
-  },
-
-  updated() {
-    console.log("updated");
+    testLink(){
+      window.open('https://google.am')
+    }
   },
 };
 </script>

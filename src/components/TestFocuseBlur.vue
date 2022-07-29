@@ -2,15 +2,24 @@
   <div>
     <div class="wrapper">
       <input
+        v-model="input_value"
         data-data_key="9"
-        @blur="onBlur"
         type="text"
         class="input-field"
-        v-model="input_value"
+        @blur="onBlur"
+      >
+      <div
+        data-data_key="9"
+        class="btn"
+        @click="onClick()"
       />
-      <div data-data_key="9" @click="onClick" class="btn"></div>
     </div>
-    <div v-for="(i, index) in t" :key="index">{{ 8 }}</div>
+    <div
+      v-for="(i, index) in t"
+      :key="index"
+    >
+      {{ 8 }}
+    </div>
   </div>
 </template>
 

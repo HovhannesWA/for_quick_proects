@@ -42,7 +42,7 @@ export default {
 
   mutations: {
     setOptions(state, payload) {
-      state.options = {...payload.options};
+      state.options = { ...payload.options };
     },
   },
 
