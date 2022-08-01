@@ -27,7 +27,9 @@
       </SlotsTest>
     </div> -->
     <!-- <AsyncComponent /> -->
-    <ParentTest />
+    <!-- <ParentTest /> -->
+    <!-- <KeepAliveTest /> -->
+    <SuspenseTest />
   </div>
 </template>
 
@@ -46,6 +48,8 @@ import SlotsTest from "./components/SlotsTest.vue";
 import TestVFor from "./components/TestVFor.vue";
 import AsyncComponent from "./components/AsyncComponent.vue";
 import ParentTest from "./components/ParentTest.vue";
+import KeepAliveTest from "./components/KeepAliveTest.vue";
+import SuspenseTest from "./components/SuspenseTest.vue";
 
 export default {
   name: "App",
@@ -64,6 +68,8 @@ export default {
     HelloWorld,
     AsyncComponent,
     ParentTest,
+    KeepAliveTest,
+    SuspenseTest,
   },
 
   data() {

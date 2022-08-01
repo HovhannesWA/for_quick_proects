@@ -12,6 +12,10 @@
         </template>
       </i18n> -->
     </div>
+    <h1>{{ $tr('hello') }}</h1>
+    <hr>
+    <h1>{{ $tr('fruits.apple') }}</h1>
+    <h1>{{ $tr('fruits.banana') }}</h1>
     <hr>
     <div
       v-for="post in posts"
