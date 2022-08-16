@@ -29,7 +29,8 @@
     <!-- <AsyncComponent /> -->
     <!-- <ParentTest /> -->
     <!-- <KeepAliveTest /> -->
-    <SuspenseTest />
+    <!-- <SuspenseTest /> -->
+    <LuxonTest />
   </div>
 </template>
 
@@ -50,6 +51,7 @@ import AsyncComponent from "./components/AsyncComponent.vue";
 import ParentTest from "./components/ParentTest.vue";
 import KeepAliveTest from "./components/KeepAliveTest.vue";
 import SuspenseTest from "./components/SuspenseTest.vue";
+import LuxonTest from "./components/LuxonTest.vue";
 
 export default {
   name: "App",
@@ -70,6 +72,7 @@ export default {
     ParentTest,
     KeepAliveTest,
     SuspenseTest,
+    LuxonTest,
   },
 
   data() {
