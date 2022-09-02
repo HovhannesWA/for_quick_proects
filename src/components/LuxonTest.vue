@@ -1,20 +1,27 @@
 <template>
   <div class="luxon_test">
     <p>Current Date</p>
-    <div class="date">      
+    <div class="date">
       <p>{{ currentDate }}</p>
     </div>
     <p>Current Time</p>
-    <div class="time">      
+    <div class="time">
       <p>{{ currentTime }}</p>
+    </div>
+
+    <div class="button_wrapper">
+      <TheButton @onClick="getCurrentDate" />
     </div>
   </div>
 </template>
 
 <script>
 import { DateTime } from "luxon";
+import TheButton from "@/UI/TheButton.vue";
+
 export default {
   name: "LuxonTest",
+  components: { TheButton },
 
   data() {
     return {
@@ -23,17 +30,32 @@ export default {
     };
   },
 
-  created() {
-    let date = new Date();
-    this.currentDate = DateTime.fromJSDate(date).toFormat("dd / LLL / yyyy");
-    this.currentTime = DateTime.fromJSDate(date).toFormat("HH:mm");
+  methods: {
+    getCurrentDate() {
+      let date = new Date();
+      this.currentDate = DateTime.fromJSDate(date).toFormat("dd / LLL / yyyy");
+      this.currentTime = DateTime.fromJSDate(date).toFormat("HH:mm:ss");
+    },
+  },
+
+  renderTracked(event) {
+    console.log("tracked");
+    console.log(event);
+  },
+  renderTriggered(event) {
+    console.log("trigered");
+    console.log(event);
+  },
+
+  created() {    
+    this.getCurrentDate();
   },
 };
 </script>
 
 <style>
 .luxon_test {
-    padding: 50px 0 0 0;
+  padding: 50px 0 0 0;
 }
 .date,
 .time {
@@ -47,5 +69,9 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.button_wrapper {
+  margin-top: 50px;
 }
 </style>

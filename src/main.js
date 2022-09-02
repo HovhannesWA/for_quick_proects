@@ -6,6 +6,7 @@ import store from "./store/index.js";
 import { translation } from "@/plugins/index";
 
 const app = createApp(App);
+
 app.use(store);
 app.use(translation);
 app.config.productionTip = false;

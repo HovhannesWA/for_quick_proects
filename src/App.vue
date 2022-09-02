@@ -30,7 +30,8 @@
     <!-- <ParentTest /> -->
     <!-- <KeepAliveTest /> -->
     <!-- <SuspenseTest /> -->
-    <LuxonTest />
+    <!-- <LuxonTest /> -->
+    <BooleanTest />
   </div>
 </template>
 
@@ -52,6 +53,7 @@ import ParentTest from "./components/ParentTest.vue";
 import KeepAliveTest from "./components/KeepAliveTest.vue";
 import SuspenseTest from "./components/SuspenseTest.vue";
 import LuxonTest from "./components/LuxonTest.vue";
+import BooleanTest from "./components/BooleanTest.vue";
 
 export default {
   name: "App",
@@ -73,6 +75,7 @@ export default {
     KeepAliveTest,
     SuspenseTest,
     LuxonTest,
+    BooleanTest,
   },
 
   data() {
