@@ -1,6 +1,9 @@
 <template>
   <h1>Test-A</h1>
-  <input type="text" v-model="a_value" />
+  <input
+    v-model="a_value"
+    type="text"
+  >
 </template>
 
 <script>

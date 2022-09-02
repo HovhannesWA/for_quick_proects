@@ -1,5 +1,9 @@
 <template>
-  <button @click="onClick" class="the-button" role="button">
+  <button
+    class="the-button"
+    role="button"
+    @click="onClick"
+  >
     {{ buttonText }}
   </button>
 </template>

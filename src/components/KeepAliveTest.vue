@@ -4,7 +4,9 @@
       <component :is="component" />
     </KeepAlive>
     <div>
-      <button @click="toggle">Toggle</button>
+      <button @click="toggle">
+        Toggle
+      </button>
     </div>
   </div>
 </template>

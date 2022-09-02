@@ -30,14 +30,6 @@ export default {
     };
   },
 
-  methods: {
-    getCurrentDate() {
-      let date = new Date();
-      this.currentDate = DateTime.fromJSDate(date).toFormat("dd / LLL / yyyy");
-      this.currentTime = DateTime.fromJSDate(date).toFormat("HH:mm:ss");
-    },
-  },
-
   renderTracked(event) {
     console.log("tracked");
     console.log(event);
@@ -49,6 +41,14 @@ export default {
 
   created() {    
     this.getCurrentDate();
+  },
+
+  methods: {
+    getCurrentDate() {
+      let date = new Date();
+      this.currentDate = DateTime.fromJSDate(date).toFormat("dd / LLL / yyyy");
+      this.currentTime = DateTime.fromJSDate(date).toFormat("HH:mm:ss");
+    },
   },
 };
 </script>

@@ -1,5 +1,7 @@
 <template>
-  <div @click="toggle">Toggle</div>
+  <div @click="toggle">
+    Toggle
+  </div>
   <AsyncComponentChild v-if="show" />
 </template>
 

@@ -3,7 +3,9 @@
   <Suspense>
     <SuspenseChild />
     <!-- loading state via #fallback slot -->
-    <template #fallback> Loading... </template>
+    <template #fallback>
+      Loading...
+    </template>
   </Suspense>
 </template>
 
