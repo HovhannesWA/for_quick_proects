@@ -1,7 +1,12 @@
 <template>
   <div>
-    <input type="text" :disabled="isDisabled" />
-    <button @click="isDisabled = !isDisabled">Toggle</button>
+    <input
+      type="text"
+      :disabled="isDisabled"
+    >
+    <button @click="isDisabled = !isDisabled">
+      Toggle
+    </button>
   </div>
 </template>
 

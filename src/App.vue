@@ -32,7 +32,9 @@
     <!-- <SuspenseTest /> -->
     <!-- <LuxonTest /> -->
     <!-- <BooleanTest /> -->
-    <LodashTest />
+    <!-- <LodashTest /> -->
+    <!-- <RequireContextTest /> -->
+    <TestEventBubbling />
   </div>
 </template>
 
@@ -55,7 +57,9 @@ import { mapGetters, mapActions } from "vuex";
 // import SuspenseTest from "./components/SuspenseTest.vue";
 // import LuxonTest from "./components/LuxonTest.vue";
 // import BooleanTest from "./components/BooleanTest.vue";
-import LodashTest from "./components/LodashTest.vue";
+// import LodashTest from "./components/LodashTest.vue";
+// import RequireContextTest from "./components/RequireContextTest.vue";
+import TestEventBubbling from '@/components/TestEventBubbling/TestEventBubbling';
 
 export default {
   name: "App",
@@ -78,7 +82,9 @@ export default {
     // SuspenseTest,
     // LuxonTest,
     // BooleanTest,
-    LodashTest,
+    // LodashTest,
+    //RequireContextTest,
+    TestEventBubbling
   },
 
   data() {

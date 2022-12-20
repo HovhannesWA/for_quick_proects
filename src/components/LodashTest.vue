@@ -1,8 +1,8 @@
 <template>
-    <div>
-      <h1>Compare lodash n lodash-ec</h1>
-    </div>
-  </template>
+  <div>
+    <h1>Compare lodash n lodash-ec</h1>
+  </div>
+</template>
   
   <script>
   import { isEmpty } from "lodash-es";
