@@ -32,7 +32,9 @@
     <!-- <SuspenseTest /> -->
     <!-- <LuxonTest /> -->
     <!-- <BooleanTest /> -->
-    <LodashTest />
+    <!-- <LodashTest /> -->
+    <!-- <CustomRadioSwich v-model="customRadioSwichValue"/> -->
+    <TestVCloack />
   </div>
 </template>
 
@@ -55,7 +57,9 @@ import { mapGetters, mapActions } from "vuex";
 // import SuspenseTest from "./components/SuspenseTest.vue";
 // import LuxonTest from "./components/LuxonTest.vue";
 // import BooleanTest from "./components/BooleanTest.vue";
-import LodashTest from "./components/LodashTest.vue";
+// import LodashTest from "./components/LodashTest.vue";
+// import CustomRadioSwich from "./components/CustomRadioSwich.vue";
+import TestVCloack from "./components/TestVCloack.vue";
 
 export default {
   name: "App",
@@ -78,7 +82,9 @@ export default {
     // SuspenseTest,
     // LuxonTest,
     // BooleanTest,
-    LodashTest,
+    // LodashTest,
+    // CustomRadioSwich,
+    TestVCloack
   },
 
   data() {
@@ -91,6 +97,7 @@ export default {
       vmodelText: "a",
       title: "bbb",
       selected_slot: "header",
+      customRadioSwichValue: 0
     };
   },
 
