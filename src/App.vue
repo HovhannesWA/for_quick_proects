@@ -33,6 +33,9 @@
     <!-- <LuxonTest /> -->
     <!-- <BooleanTest /> -->
     <!-- <LodashTest /> -->
+    <!-- <RequireContextTest /> -->
+    <!-- <TestEventBubbling />, -->
+    <!-- <LodashTest /> -->
     <!-- <CustomRadioSwich v-model="customRadioSwichValue"/> -->
     <TestVCloack />
   </div>
@@ -57,8 +60,6 @@ import { mapGetters, mapActions } from "vuex";
 // import SuspenseTest from "./components/SuspenseTest.vue";
 // import LuxonTest from "./components/LuxonTest.vue";
 // import BooleanTest from "./components/BooleanTest.vue";
-// import LodashTest from "./components/LodashTest.vue";
-// import CustomRadioSwich from "./components/CustomRadioSwich.vue";
 import TestVCloack from "./components/TestVCloack.vue";
 
 export default {
@@ -82,6 +83,9 @@ export default {
     // SuspenseTest,
     // LuxonTest,
     // BooleanTest,
+    // LodashTest,
+    //RequireContextTest,
+    // TestEventBubbling,
     // LodashTest,
     // CustomRadioSwich,
     TestVCloack
